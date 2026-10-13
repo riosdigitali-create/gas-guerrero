@@ -1,0 +1,2 @@
+import { sqliteTable, text } from 'drizzle-orm/sqlite-core';
+export const orders = sqliteTable('orders', { id: text('id').primaryKey(), userId: text('user_id').notNull(), name: text('name').notNull(), phone: text('phone').notNull(), address: text('address').notNull(), location: text('location'), service: text('service').notNull(), quantity: text('quantity').notNull(), date: text('date').notNull(), slot: text('slot').notNull(), status: text('status').notNull().default('Por confirmar'), createdAt: text('created_at').notNull() });

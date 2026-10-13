@@ -1,10 +1,10 @@
 # Gas Guerrero
 
-Tu gas, a un clic.
+**Tu gas, a un clic.**
 
-Sitio público: https://gas-guerrero.riosdigitali.chatgpt.site
+Web pública: https://gas-guerrero.riosdigitali.chatgpt.site
 
-Aplicación Vinext/React para solicitudes de gas LP en Aragón. Incluye cuenta, historial e imágenes generadas con IA. Stripe, calendario, tarifas y administrador están pendientes de configuración. GitHub aloja el código; la aplicación utiliza Cloudflare Workers y D1, no GitHub Pages.
+Aplicación React/Vinext para solicitudes de gas LP en Aragón, con cuenta, historial, panel e imágenes generadas con IA.
 
 ## Desarrollo
 
@@ -13,4 +13,10 @@ npm install
 npm run dev
 ```
 
-La autenticación de clientes usa la integración de ChatGPT Sites. Las solicitudes requieren una base D1 y las migraciones en `drizzle/`. No contiene claves secretas ni datos de clientes.
+Servidor Cloudflare Workers y base D1; migraciones en `drizzle/`. Autenticación mediante ChatGPT Sites. GitHub aloja el código; el sitio completo no se ejecuta directamente en GitHub Pages.
+
+## Pendiente para operación comercial
+
+Stripe, calendario del dueño, precios, ubicación exacta de la base y `ADMIN_USER_ID` (variable de entorno protegida). Las solicitudes se guardan como pendientes; no se cobran ni confirman entregas automáticamente.
+
+No se incluyen secretos, datos de clientes, historial Git interno ni identificador del proyecto de hosting. Imágenes optimizadas en `public/images/`.
